@@ -30,3 +30,6 @@ s3-cli
 s3cmd-info
 empty.txt
 .env
+
+# idea
+.idea/

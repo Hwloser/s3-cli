@@ -9,10 +9,6 @@ import (
 
 type CmdHandler func(*Config, *cli.Context) error
 
-func CmdNotImplemented(*Config, *cli.Context) error {
-	return fmt.Errorf("Command not implemented")
-}
-
 func main() {
 	// Now the setup for the application
 
@@ -189,5 +185,8 @@ func main() {
 		// mv
 	}
 
-	cliapp.Run(os.Args)
+	err := cliapp.Run(os.Args)
+	if err != nil {
+		return
+	}
 }
