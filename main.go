@@ -185,6 +185,7 @@ func main() {
 		// mv
 	}
 
+	// temporary policy to resolve warning
 	err := cliapp.Run(os.Args)
 	if err != nil {
 		return
