@@ -14,7 +14,6 @@ func main() {
 
 	cliapp := cli.NewApp()
 	cliapp.Name = "s3-cli"
-	// cliapp.Usage = ""
 	cliapp.Version = "0.2.2"
 
 	cli.VersionFlag = &cli.BoolFlag{
